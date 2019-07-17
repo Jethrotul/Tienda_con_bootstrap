@@ -47,119 +47,128 @@
           <!--usuario-->
         </nav>
       </header>
-      <!--Contenido libros-->
-      <div class="row pt-4 card-desk justify-content-center">
-        <!--libros 1-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <div class="container">
-            <img
-              src="../img/libro1.jpg"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
+      <!--Header-->
+
+      <!--Body-->
+      <div class="border ml-5 mr-5">
+        <div class="container row">
+          <div class="mx-auto btn-group mt-5">
+            <a
+              href="#alta"
+              id="alta_collapse"
+              class="btn"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <button type="button" class="btn btn-primary btn-lg">
+                Alta
+              </button></a
+            >
+            <a
+              href="#registro"
+              id="registro_collapse"
+              class="btn"
+              data-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <button type="button" class="btn btn-secondary btn-lg">
+                Registro
+              </button></a
+            >
           </div>
-          <div class="container">
-            <div class="card-body h-178">
-              <h5 class="card-title ">Todo es posible</h5>
-              <p class="card-text">Alicia Sanchez Perez</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+        <div class="container row my-5 collapse show" id="alta">
+          <form class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mx-auto">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
             </div>
-          </div>
-        </div>
-        <!--libros 2-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <div class="container">
-            <img
-              src="../img/libro2.jpg"
-              class="card-img-top img-fluid "
-              style="object-fit: cover"
-              alt="..."
-            />
-          </div>
-          <div class="container">
-            <div class="card-body">
-              <h5 class="card-title">Horror Stories</h5>
-              <p class="card-text">E. Nesbit</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
             </div>
-          </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <form></form>
+          </form>
         </div>
-        <!--libros 3-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <div class="container">
-            <img src="../img/libro3.jpg" class="card-img-top" alt="..." />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Moral Relativism</h5>
-            <p class="card-text">Steven Lukes</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-        <!--libros 4-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <div class="container">
-            <img src="../img/libro4.jpg" class="card-img-top" alt="..." />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Alice's adventures in Wonderland</h5>
-            <p class="card-text">Lewis Carrol</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-        <!--libros 5-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <img src="../img/libro5.jpg" class="card-img-top" alt="...""/>
-          <div class="card-body">
-            <h5 class="card-title">Origen</h5>
-            <p class="card-text">Dan Brown</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-        <!--libros 6-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <img src="../img/libro6.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Startup</h5>
-            <p class="card-text">Doree Shafrir</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-        <!--libros 7-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <img src="../img/libro7.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">¿Hacemos una pausa?</h5>
-            <p class="card-text">Gema Sánchez</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
-        </div>
-        <!--libros 8-->
-        <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
-        >
-          <img src="../img/libro8.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">El descubrimiento de las brujas</h5>
-            <p class="card-text">Deborah Harkness</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-          </div>
+  
+        <div class="container row my-5 collapse" id="registro">
+          <form class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mx-auto">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+              <label for="exampleInputPassword1">Repetir Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Repetir Password"
+              />
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <form></form>
+          </form>
         </div>
       </div>
-      <!--Contenido libros-->
+      <!--Body-->
+
+      <!--Footer-->
       <div class="footer">
         Icons made by
         <a
@@ -246,7 +255,7 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
           © 2019 Copyright: Tienda de libros Fulkim
-          </div>
+        </div>
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
