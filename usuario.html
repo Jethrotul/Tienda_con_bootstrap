@@ -11,6 +11,7 @@
   </head>
   <body>
     <div class="container">
+      <!--Header-->
       <header class="header">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
           <a class="navbar-brand py-0 mt-1" href="index.html">
@@ -82,7 +83,7 @@
           </div>
         </div>
         <div class="container row my-5 collapse show" id="alta">
-          <form class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mx-auto">
+          <form class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mx-auto needs-validation" novalidate>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input
@@ -92,6 +93,9 @@
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
+              <div class="valid-feedback">
+                  Looks good!
+                </div>
               <small id="emailHelp" class="form-text text-muted"
                 >We'll never share your email with anyone else.</small
               >
@@ -105,23 +109,26 @@
                 placeholder="Password"
               />
             </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <form></form>
-          </form>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </form>
         </div>
   
         <div class="container row my-5 collapse" id="registro">
-          <form class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mx-auto">
+          <form class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 mx-auto needs-validation2" novalidate>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input
@@ -150,19 +157,30 @@
                 id="exampleInputPassword1"
                 placeholder="Repetir Password"
               />
+              <div class="form align-items-center">
+                
+                  <label class="mr-sm-2" for="inlineFormCustomSelect">Provincia</label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Seleccionar provincia...</option>
+                    <option value="1">Tarragona</option>
+                    <option value="2">Barcelona</option>
+                    <option value="3">Lerida</option>
+                    <option value="3">Gerona</option>
+                  </select>
+                
             </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <form></form>
+            <button class="btn btn-primary" type="submit">Submit form</button>
           </form>
         </div>
       </div>
