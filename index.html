@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand py-0 mt-1" href="index.html">
             <img
               src="img/libro.svg"
@@ -21,99 +21,93 @@
               class="d-inline-block align-top"
               alt=""
             />
-            Tienda libros
+            Tienda libros Fulkim
           </a>
-          <!--Logo-->
-          <div class="nav navbar-nav">
-            <ul class="nav navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Catálogo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Novedades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nosotros</a>
+                <a class="nav-link" href="#">Blog</a>
               </li>
             </ul>
-          </div>
-          <!--menu-->
-          <form class="form-inline ml-auto">
-              <div>
-                <label for="mySearch"></label>
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  id="mySearch"
-                  name="q"
-                  placeholder="Buscar libros"
-                  required
-                  size="30"
-                  minlength="3"
-                  maxlength="20"
-                />
-                <button class="btn btn-outline-dark my-2 my-sm-0">Busqueda</button>
-                <span class="validity"></span>
-              </div>
+            <form class="form-inline ml-auto">
+              <label for="mySearch"></label>
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                id="mySearch"
+                name="q"
+                placeholder="Buscar libros"
+                required
+                size="30"
+                minlength="3"
+                maxlength="20"
+              />
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                Busqueda
+              </button>
+              <span class="validity"></span>
             </form>
-          <a href="usuario.html" class="ml-auto btn" role="button">
-            <button type="button" class="btn btn-dark ml-auto">Usuario</button>
-          </a>
-          
-          <!--usuario-->
+            <a href="usuario.html" class="ml-auto btn" role="button">
+              <button type="button" class="btn btn-dark ml-auto">
+                Usuario
+              </button>
+            </a>
+          </div>
         </nav>
       </header>
       <!--Contenido libros-->
-      <div class="row pt-5 card-desk justify-content-center">
+      <div class="row pt-5 card-desk justify-content-center img-fluid">
         <!--libros 1-->
         <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
+          class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center "
         >
-          <div class="container">
-            <img
-              src="img/libro1.jpg"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-          </div>
-          <div class="container">
-            <div class="card-body h-178">
-              <h5 class="card-title ">Todo es posible</h5>
-              <p class="card-text">Alicia Sanchez Perez</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
+          <img src="img/libro1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body h-178">
+            <h5 class="card-title ">Todo es posible</h5>
+            <p class="card-text">Alicia Sanchez Perez</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <!--libros 2-->
         <div
           class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
         >
-          <div class="container">
-            <img
-              src="img/libro2.jpg"
-              class="card-img-top img-fluid "
-              style="object-fit: cover"
-              alt="..."
-            />
-          </div>
-          <div class="container">
-            <div class="card-body">
-              <h5 class="card-title">Horror Stories</h5>
-              <p class="card-text">E. Nesbit</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
+          <img
+            src="img/libro2.jpg"
+            class="card-img-top"
+            style="object-fit: cover"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Horror Stories</h5>
+            <p class="card-text">E. Nesbit</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
         <!--libros 3-->
         <div
           class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
         >
-          <div class="container">
-            <img src="img/libro3.jpg" class="card-img-top" alt="..." />
-          </div>
+          <img src="img/libro3.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Moral Relativism</h5>
             <p class="card-text">Steven Lukes</p>
@@ -124,9 +118,7 @@
         <div
           class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
         >
-          <div class="container">
-            <img src="img/libro4.jpg" class="card-img-top" alt="..." />
-          </div>
+          <img src="img/libro4.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Alice's adventures in Wonderland</h5>
             <p class="card-text">Lewis Carrol</p>
@@ -137,7 +129,7 @@
         <div
           class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 card border-0 text-center"
         >
-          <img src="img/libro5.jpg" class="card-img-top" alt="...""/>
+          <img src="img/libro5.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Origen</h5>
             <p class="card-text">Dan Brown</p>
@@ -265,7 +257,7 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
           © 2019 Copyright: Tienda de libros Fulkim
-          </div>
+        </div>
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
